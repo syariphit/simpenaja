@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "351881627534",
+    "project_id": "simpenaja-24162",
+    "storage_bucket": "simpenaja-24162.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351881627534:android:cd22d1ad9c2e3cb5a446df",
+        "android_client_info": {
+          "package_name": "com.ryunapp.simpenaja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351881627534-309rtvtp1uov3nn7oshb0c0le0uk4hs2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ryunapp.simpenaja",
+            "certificate_hash": "e709bfa3ee5fa9fe2adbf8ccc2b70ab9ad6f7111"
+          }
+        },
+        {
+          "client_id": "351881627534-jop11l44rn85md7jqu3kis4iv96smen6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-KGJexP8_hh8uO2GZxCHp87hliGUi5Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351881627534-jop11l44rn85md7jqu3kis4iv96smen6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
