@@ -1,11 +1,8 @@
 import 'package:eminovel/helpers/constants.dart';
 import 'package:eminovel/helpers/custom_colors.dart';
 import 'package:eminovel/pages/home.dart';
-import 'package:eminovel/pages/Barang.dart';
-import 'package:eminovel/pages/login.dart';
-import 'package:eminovel/pages/notif.dart';
+import 'package:eminovel/pages/barang.dart';
 import 'package:eminovel/pages/profile.dart';
-import 'package:eminovel/pages/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:ionicons/ionicons.dart';
@@ -68,7 +65,7 @@ class _AppState extends State<App> with SingleTickerProviderStateMixin {
       body: TabBarView(
         children: [
           Home(storage: storage),
-          Barang(),
+          Barang(storage: storage),
           // Notif(),
           Profile(storage: storage)
         ],

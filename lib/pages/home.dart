@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:eminovel/helpers/constants.dart';
 import 'package:eminovel/helpers/custom_colors.dart';
 import 'package:flutter/material.dart';
@@ -37,8 +38,15 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     get_profile();
+    countDocuments();
   }
   
+  void countDocuments() async {
+    var data = await FirebaseFirestore.instance.collection('items').where('email', isEqualTo: username).snapshots();
+    print('WOY');
+    print('${data}');
+  }
+
   void get_profile() async{
     LocalStorage storage = widget.storage;
     setState(() {
@@ -112,7 +120,7 @@ class _HomeState extends State<Home> {
                           ),
                         ],
                       ),
-                      child: _app_header()
+                      child: _app_header(30)
                     ),
                   )
                 ],
@@ -391,7 +399,7 @@ Widget _card_item(String? title, String? subtitle, String? type, String? date, S
 }
 
 
-Widget _app_header(){
+Widget _app_header(total){
   return Row(
     children: [
       Image.asset(
@@ -416,7 +424,7 @@ Widget _app_header(){
             ),
           ),
           Text(
-            '30',
+            '${total}',
             style: TextStyle(
               fontSize: 40,
               fontWeight: FontWeight.bold
